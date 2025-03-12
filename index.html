@@ -10,6 +10,10 @@
     />
     <title>Verify Product | BTC</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <div id="wrapwrap">
@@ -100,10 +104,21 @@
         </section>
         <section class="serial-num-check">
           <div class="input-container">
-            <label for="serialNumber"
+            <label for="serial-input"
               >Enter your Serial Number to Generate a Certificate:</label
             >
-            <input type="text" name="serialNumber" id="serialNumber" />
+            <input
+              type="text"
+              name="serial-input"
+              id="serial-input"
+              maxlength="19"
+              placeholder="XXXX XXXX XXXX"
+              oninput="formatSerial(this)"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            />
           </div>
         </section>
       </main>
@@ -150,15 +165,30 @@
           <div class="connect-with-us-container">
             <h3>Connect With Us</h3>
             <ul class="connect-with-us">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                <i class="fa-solid fa-comment icon"></i>
+                <a href="https://www.bulliontradingcenter.com/contactus"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope icon"></i>
+                <a href="mailto:info@bulliontradingcenter.com"
+                  >info@bulliontradingcenter.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-phone icon"></i>
+                <a href="tel:8005055">8005055</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="copy-rights"></div>
+        <div class="copy-rights">
+          <span>Copyright © BTC Global</span>
+        </div>
       </footer>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
