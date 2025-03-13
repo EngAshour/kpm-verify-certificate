@@ -78,6 +78,7 @@ main {
   .guide {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     .steps-text {
       padding-inline: 15px;
       .introduction {
@@ -122,6 +123,15 @@ main {
       }
     }
   }
+  .devider {
+    display: flex;
+    justify-content: center;
+    margin-block: 16px;
+    hr {
+      border-color: var(--secondary-text-color);
+      width: 40%;
+    }
+  }
   .serial-num-check {
     margin-block: 40px;
     .input-container {
@@ -160,6 +170,24 @@ main {
         letter-spacing: 10px;
         text-align: center;
       }
+    }
+  }
+  .certificate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      color: var(--text-color);
+      font-family: var(--title-font-family);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-block: 21px;
+    }
+    .certificate-placeholder {
+      max-width: 600px;
+      max-height: 800px;
+      margin-block-end: 21px;
     }
   }
 }
@@ -317,10 +345,57 @@ footer {
         }
       }
     }
+    .certificate-container {
+      h3 {
+        font-size: 18px;
+      }
+      .certificate-placeholder {
+        max-width: 380px;
+        max-height: 600px;
+      }
+    }
   }
   footer {
+    .footer-logo {
+      img {
+        width: 60%;
+      }
+    }
     .main-footer {
+      gap: 10px;
       flex-direction: column;
+      .useful-links-container {
+        h3 {
+          margin-block-end: 10px;
+        }
+        .useful-links {
+          li {
+            padding-block-end: 3px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .connect-with-us-container {
+        h3 {
+          margin-block-end: 10px;
+        }
+        .connect-with-us {
+          li {
+            padding-block-end: 3px;
+            .icon {
+              width: 15px;
+              height: 15px;
+              margin-right: 2px;
+            }
+            a {
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+      }
     }
   }
 }
