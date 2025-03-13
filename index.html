@@ -102,17 +102,17 @@
             <img src="assets/imgs/guide.jpg" alt="Step by Step Guide" />
           </div>
         </section>
+        <div class="devider">
+          <hr />
+        </div>
         <section class="serial-num-check">
           <div class="input-container">
-            <label for="serial-input"
-              >Enter your Serial Number to Generate a Certificate:</label
-            >
+            <label for="serial-input">Generate Certificate:</label>
             <input
               type="text"
               name="serial-input"
               id="serial-input"
-              maxlength="19"
-              placeholder="XXXX XXXX XXXX"
+              maxlength="30"
               oninput="formatSerial(this)"
               autocomplete="off"
               autocorrect="off"
@@ -120,6 +120,10 @@
               spellcheck="false"
             />
           </div>
+        </section>
+        <section class="certificate-container">
+          <h3>The Certificate Will Appear Here</h3>
+          <div class="certificate-placeholder"></div>
         </section>
       </main>
       <footer>
